@@ -1,0 +1,23 @@
+        <!--about-->
+        <section class="wrapper about" id="about">                       
+            <div class="container aboutCont">                
+                <div class="row">                    
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <h1 class="uppercase">About</h1>
+                        <div class="about-content col-md-12 col-sm-12 text-justify">
+                            <p class="font20">Toolzbox is a collection of web based to open source tools to make your life easy. All the tools shared here are free to use and are open source. You can create a login account to customize your experiance for using the website. Here is the core team behind tlzbx.in</p>
+                        </div>
+                        <div class="about-team col-md-12 col-sm-12 text-center">
+                            <div class="row" ng-controller="teamCtrl">
+                                <div class="team-member col-md-3 col-sm-3" ng-repeat="i in items">
+                                    <div class="member-img"><img src="assets/{{i.img}}.png" alt='{{i.name}}'/></div>
+                                    <div class="member-nm">{{i.name}}</div>
+                                    <div class="member-pro">{{i.pro}}</div>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--about end-->
